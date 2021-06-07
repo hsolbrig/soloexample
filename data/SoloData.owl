@@ -1,0 +1,30 @@
+Prefix(:=<http://ontologies.r.us/ncitp/SoloData#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(solod:=<http://ontologies.r.us/ncitp/SoloData##>)
+Prefix(solocs:=<http://ontologies.r.us/ncitp/SoloCodeSets#>)
+Prefix(soloon:=<http://ontologies.r.us/ncitp/SoloOntology#>)
+
+
+Ontology(<http://ontologies.r.us/ncitp/SoloData>
+Import(<http://ontologies.r.us/ncitp/SoloCodeSets>)
+Import(<http://ontologies.r.us/ncitp/SoloOntology>)
+
+Declaration(NamedIndividual(solocs:FFPE_DNA))
+Declaration(NamedIndividual(solocs:specimen_12345))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: solocs:specimen_12345 (solocs:specimen_12345)
+
+ClassAssertion(soloon:Biospecimen solocs:specimen_12345)
+ObjectPropertyAssertion(soloon:analyte_type solocs:specimen_12345 solocs:FFPE_DNA)
+
+
+)

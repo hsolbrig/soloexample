@@ -1,0 +1,43 @@
+Prefix(:=<http://ontologies.r.us/ncitp/SoloCodeSets/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(solocs:=<http://ontologies.r.us/ncitp/SoloCodeSets#>)
+Prefix(soloon:=<http://ontologies.r.us/ncitp/SoloOntology#>)
+
+
+Ontology(<http://ontologies.r.us/ncitp/SoloCodeSets>
+Import(<http://ontologies.r.us/ncitp/SoloOntology>)
+
+Declaration(NamedIndividual(solocs:DNA))
+Declaration(NamedIndividual(solocs:FFPE_DNA))
+Declaration(NamedIndividual(solocs:FixedFormalin))
+Declaration(NamedIndividual(solocs:PariffinEmbedding))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: solocs:DNA (solocs:DNA)
+
+ClassAssertion(soloon:Dioxyribonucleic_Acid solocs:DNA)
+
+# Individual: solocs:FFPE_DNA (solocs:FFPE_DNA)
+
+ObjectPropertyAssertion(soloon:analysis_target solocs:FFPE_DNA solocs:DNA)
+ObjectPropertyAssertion(soloon:uses_preservation_method solocs:FFPE_DNA solocs:FixedFormalin)
+ObjectPropertyAssertion(soloon:uses_preservation_method solocs:FFPE_DNA solocs:PariffinEmbedding)
+
+# Individual: solocs:FixedFormalin (solocs:FixedFormalin)
+
+ClassAssertion(soloon:Fixed_Formalin_Preservation solocs:FixedFormalin)
+
+# Individual: solocs:PariffinEmbedding (solocs:PariffinEmbedding)
+
+ClassAssertion(soloon:Paraffin_Embedding_Preservation solocs:PariffinEmbedding)
+
+
+)

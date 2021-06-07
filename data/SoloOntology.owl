@@ -1,0 +1,178 @@
+Prefix(:=<http://ontologies.r.us/ncitp/SoloOntology#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(solocs:=<http://ontologies.r.us/ncitp/SoloCodeSets#>)
+Prefix(soloon:=<http://ontologies.r.us/ncitp/SoloOntology#>)
+Prefix(solod:=<http://ontologies.r.us/ncitp/SoloData##>)
+
+
+Ontology(<http://ontologies.r.us/ncitp/SoloOntology>
+
+Declaration(Class(:Biological_Sample_Preservation_Procedure))
+Declaration(Class(:Biospecimen))
+Declaration(Class(:Blood_DNA))
+Declaration(Class(:Cell_of_Vector_Cryopreservation))
+Declaration(Class(:Cryopreservation))
+Declaration(Class(:DNA_Biospecimen))
+Declaration(Class(:Dioxyribonucleic_Acid))
+Declaration(Class(:Egg_Preservation))
+Declaration(Class(:FFPE_Preservation))
+Declaration(Class(:Fixed_Formalin_Preservation))
+Declaration(Class(:Fixed_Specimen))
+Declaration(Class(:Formalin-Fixed_Paraffin-Embedded_DNA))
+Declaration(Class(:Formalin-Fixed_Paraffin-Embedded_RNA))
+Declaration(Class(:Formalin_Preserved_Specimen))
+Declaration(Class(:Messenger_RNA))
+Declaration(Class(:Non-FFPE_DNA_Biospecimen))
+Declaration(Class(:Non_FFPE_Preservation))
+Declaration(Class(:Nucleic_Acids))
+Declaration(Class(:Organic_Chemical))
+Declaration(Class(:PGPE_Preservation))
+Declaration(Class(:Paraffin_Embedding_Preservation))
+Declaration(Class(:Preservation_Procedure))
+Declaration(Class(:Propylene_Glycol_Preservation))
+Declaration(Class(:RNA_Biospecimen))
+Declaration(Class(:Ribonucleic_Acid))
+Declaration(Class(:Specimen))
+Declaration(Class(:Substance))
+Declaration(ObjectProperty(:analysis_target))
+Declaration(ObjectProperty(:analyte_type))
+Declaration(ObjectProperty(:uses_preservation_method))
+Declaration(DataProperty(:analyte_type_id))
+############################
+#   Object Properties
+############################
+
+# Object Property: :analysis_target (:analysis_target)
+
+ObjectPropertyDomain(:analysis_target :Specimen)
+ObjectPropertyRange(:analysis_target :Organic_Chemical)
+
+# Object Property: :analyte_type (:analyte_type)
+
+ObjectPropertyDomain(:analyte_type :Specimen)
+ObjectPropertyRange(:analyte_type :Biospecimen)
+
+# Object Property: :uses_preservation_method (:uses_preservation_method)
+
+SubObjectPropertyOf(:uses_preservation_method owl:topObjectProperty)
+ObjectPropertyDomain(:uses_preservation_method :Specimen)
+ObjectPropertyRange(:uses_preservation_method :Preservation_Procedure)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Biological_Sample_Preservation_Procedure (:Biological_Sample_Preservation_Procedure)
+
+SubClassOf(:Biological_Sample_Preservation_Procedure :Preservation_Procedure)
+
+# Class: :Biospecimen (:Biospecimen)
+
+SubClassOf(:Biospecimen :Specimen)
+SubClassOf(:Biospecimen ObjectSomeValuesFrom(:analysis_target :Organic_Chemical))
+SubClassOf(:Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Preservation_Procedure))
+SubClassOf(:Biospecimen ObjectAllValuesFrom(:analysis_target :Organic_Chemical))
+
+# Class: :Blood_DNA (:Blood_DNA)
+
+SubClassOf(:Blood_DNA :DNA_Biospecimen)
+
+# Class: :Cell_of_Vector_Cryopreservation (:Cell_of_Vector_Cryopreservation)
+
+SubClassOf(:Cell_of_Vector_Cryopreservation :Cryopreservation)
+
+# Class: :Cryopreservation (:Cryopreservation)
+
+SubClassOf(:Cryopreservation :Biological_Sample_Preservation_Procedure)
+
+# Class: :DNA_Biospecimen (:DNA_Biospecimen)
+
+EquivalentClasses(:DNA_Biospecimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:analysis_target :Dioxyribonucleic_Acid)))
+
+# Class: :Dioxyribonucleic_Acid (:Dioxyribonucleic_Acid)
+
+SubClassOf(:Dioxyribonucleic_Acid :Nucleic_Acids)
+
+# Class: :Egg_Preservation (:Egg_Preservation)
+
+SubClassOf(:Egg_Preservation :Biological_Sample_Preservation_Procedure)
+
+# Class: :FFPE_Preservation (:FFPE_Preservation)
+
+EquivalentClasses(:FFPE_Preservation ObjectIntersectionOf(:Fixed_Formalin_Preservation :Paraffin_Embedding_Preservation))
+DisjointClasses(:FFPE_Preservation :Non_FFPE_Preservation)
+
+# Class: :Fixed_Formalin_Preservation (:Fixed_Formalin_Preservation)
+
+SubClassOf(:Fixed_Formalin_Preservation :Biological_Sample_Preservation_Procedure)
+
+# Class: :Fixed_Specimen (:Fixed_Specimen)
+
+EquivalentClasses(:Fixed_Specimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Paraffin_Embedding_Preservation)))
+SubClassOf(:Fixed_Specimen :Biospecimen)
+
+# Class: :Formalin-Fixed_Paraffin-Embedded_DNA (:Formalin-Fixed_Paraffin-Embedded_DNA)
+
+EquivalentClasses(:Formalin-Fixed_Paraffin-Embedded_DNA ObjectIntersectionOf(:DNA_Biospecimen :Fixed_Specimen :Formalin_Preserved_Specimen))
+
+# Class: :Formalin-Fixed_Paraffin-Embedded_RNA (:Formalin-Fixed_Paraffin-Embedded_RNA)
+
+EquivalentClasses(:Formalin-Fixed_Paraffin-Embedded_RNA ObjectIntersectionOf(:RNA_Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Fixed_Formalin_Preservation) ObjectSomeValuesFrom(:uses_preservation_method :Paraffin_Embedding_Preservation)))
+
+# Class: :Formalin_Preserved_Specimen (:Formalin_Preserved_Specimen)
+
+EquivalentClasses(:Formalin_Preserved_Specimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Fixed_Formalin_Preservation)))
+SubClassOf(:Formalin_Preserved_Specimen :Biospecimen)
+
+# Class: :Messenger_RNA (:Messenger_RNA)
+
+SubClassOf(:Messenger_RNA :Ribonucleic_Acid)
+
+# Class: :Non-FFPE_DNA_Biospecimen (:Non-FFPE_DNA_Biospecimen)
+
+EquivalentClasses(:Non-FFPE_DNA_Biospecimen ObjectIntersectionOf(:DNA_Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Non-FFPE_DNA_Biospecimen)))
+SubClassOf(:Non-FFPE_DNA_Biospecimen :DNA_Biospecimen)
+
+# Class: :Non_FFPE_Preservation (:Non_FFPE_Preservation)
+
+SubClassOf(:Non_FFPE_Preservation :Biological_Sample_Preservation_Procedure)
+
+# Class: :Nucleic_Acids (:Nucleic_Acids)
+
+SubClassOf(:Nucleic_Acids :Organic_Chemical)
+
+# Class: :Organic_Chemical (:Organic_Chemical)
+
+SubClassOf(:Organic_Chemical :Substance)
+
+# Class: :PGPE_Preservation (:PGPE_Preservation)
+
+EquivalentClasses(:PGPE_Preservation ObjectIntersectionOf(:Paraffin_Embedding_Preservation :Propylene_Glycol_Preservation))
+SubClassOf(:PGPE_Preservation :Propylene_Glycol_Preservation)
+
+# Class: :Paraffin_Embedding_Preservation (:Paraffin_Embedding_Preservation)
+
+SubClassOf(:Paraffin_Embedding_Preservation :Biological_Sample_Preservation_Procedure)
+
+# Class: :Propylene_Glycol_Preservation (:Propylene_Glycol_Preservation)
+
+SubClassOf(:Propylene_Glycol_Preservation :Biological_Sample_Preservation_Procedure)
+
+# Class: :RNA_Biospecimen (:RNA_Biospecimen)
+
+EquivalentClasses(:RNA_Biospecimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:analysis_target :Ribonucleic_Acid)))
+
+# Class: :Ribonucleic_Acid (:Ribonucleic_Acid)
+
+SubClassOf(:Ribonucleic_Acid :Nucleic_Acids)
+
+
+SubObjectPropertyOf(ObjectPropertyChain(:analyte_type :analysis_target) :analysis_target)
+SubObjectPropertyOf(ObjectPropertyChain(:analyte_type :uses_preservation_method) :uses_preservation_method)
+)
