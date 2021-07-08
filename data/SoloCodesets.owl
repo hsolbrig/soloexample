@@ -23,10 +23,11 @@ Declaration(NamedIndividual(solocs:PariffinEmbedding))
 
 # Individual: solocs:DNA (solocs:DNA)
 
-ClassAssertion(soloon:Dioxyribonucleic_Acid solocs:DNA)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> solocs:DNA)
 
 # Individual: solocs:FFPE_DNA (solocs:FFPE_DNA)
 
+ClassAssertion(soloon:Formalin-Fixed_Paraffin-Embedded_DNA solocs:FFPE_DNA)
 ObjectPropertyAssertion(soloon:analysis_target solocs:FFPE_DNA solocs:DNA)
 ObjectPropertyAssertion(soloon:uses_preservation_method solocs:FFPE_DNA solocs:FixedFormalin)
 ObjectPropertyAssertion(soloon:uses_preservation_method solocs:FFPE_DNA solocs:PariffinEmbedding)

@@ -4,63 +4,91 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(solod:=<http://ontologies.r.us/ncitp/SoloData##>)
 Prefix(solocs:=<http://ontologies.r.us/ncitp/SoloCodeSets#>)
 Prefix(soloon:=<http://ontologies.r.us/ncitp/SoloOntology#>)
-Prefix(solod:=<http://ontologies.r.us/ncitp/SoloData##>)
 
 
 Ontology(<http://ontologies.r.us/ncitp/SoloOntology>
 
-Declaration(Class(:Biological_Sample_Preservation_Procedure))
-Declaration(Class(:Biospecimen))
-Declaration(Class(:Blood_DNA))
-Declaration(Class(:Cell_of_Vector_Cryopreservation))
-Declaration(Class(:Cryopreservation))
-Declaration(Class(:DNA_Biospecimen))
-Declaration(Class(:Dioxyribonucleic_Acid))
-Declaration(Class(:Egg_Preservation))
-Declaration(Class(:FFPE_Preservation))
-Declaration(Class(:Fixed_Formalin_Preservation))
-Declaration(Class(:Fixed_Specimen))
-Declaration(Class(:Formalin-Fixed_Paraffin-Embedded_DNA))
-Declaration(Class(:Formalin-Fixed_Paraffin-Embedded_RNA))
-Declaration(Class(:Formalin_Preserved_Specimen))
-Declaration(Class(:Messenger_RNA))
-Declaration(Class(:Non-FFPE_DNA_Biospecimen))
-Declaration(Class(:Non_FFPE_Preservation))
-Declaration(Class(:Nucleic_Acids))
-Declaration(Class(:Organic_Chemical))
-Declaration(Class(:PGPE_Preservation))
-Declaration(Class(:Paraffin_Embedding_Preservation))
-Declaration(Class(:Preservation_Procedure))
-Declaration(Class(:Propylene_Glycol_Preservation))
-Declaration(Class(:RNA_Biospecimen))
-Declaration(Class(:Ribonucleic_Acid))
-Declaration(Class(:Specimen))
-Declaration(Class(:Substance))
-Declaration(ObjectProperty(:analysis_target))
-Declaration(ObjectProperty(:analyte_type))
-Declaration(ObjectProperty(:uses_preservation_method))
-Declaration(DataProperty(:analyte_type_id))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812>))
+Declaration(Class(soloon:Blood_Biospecimen))
+Declaration(Class(soloon:Blood_DNA))
+Declaration(Class(soloon:DNA_Biospecimen))
+Declaration(Class(soloon:FFPE_Preservation))
+Declaration(Class(soloon:Fixed_Formalin_Preservation))
+Declaration(Class(soloon:Fixed_Specimen))
+Declaration(Class(soloon:Formalin-Fixed_Paraffin-Embedded_DNA))
+Declaration(Class(soloon:Formalin-Fixed_Paraffin-Embedded_RNA))
+Declaration(Class(soloon:Formalin_Preserved_Specimen))
+Declaration(Class(soloon:Non-FFPE_DNA_Biospecimen))
+Declaration(Class(soloon:Non-FFPE_DNA_Specimen))
+Declaration(Class(soloon:Non_FFPE_Preservation))
+Declaration(Class(soloon:PGPE_Preservation))
+Declaration(Class(soloon:Paraffin_Embedding_Preservation))
+Declaration(Class(soloon:Propylene_Glycol_Preservation))
+Declaration(Class(soloon:RNA_Biospecimen))
+Declaration(ObjectProperty(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source>))
+Declaration(ObjectProperty(soloon:analysis_target))
+Declaration(ObjectProperty(soloon:analyte_type))
+Declaration(ObjectProperty(soloon:uses_preservation_method))
+Declaration(DataProperty(soloon:analyte_type_id))
+
 ############################
 #   Object Properties
 ############################
 
-# Object Property: :analysis_target (:analysis_target)
+# Object Property: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source> (<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source>)
 
-ObjectPropertyDomain(:analysis_target :Specimen)
-ObjectPropertyRange(:analysis_target :Organic_Chemical)
+AnnotationAssertion(rdfs:comment <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source> "The original source of a specimen")
+ObjectPropertyDomain(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>)
+ObjectPropertyRange(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219>)
 
-# Object Property: :analyte_type (:analyte_type)
+# Object Property: soloon:analysis_target (soloon:analysis_target)
 
-ObjectPropertyDomain(:analyte_type :Specimen)
-ObjectPropertyRange(:analyte_type :Biospecimen)
+ObjectPropertyDomain(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>)
+ObjectPropertyRange(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718>)
 
-# Object Property: :uses_preservation_method (:uses_preservation_method)
+# Object Property: soloon:analyte_type (soloon:analyte_type)
 
-SubObjectPropertyOf(:uses_preservation_method owl:topObjectProperty)
-ObjectPropertyDomain(:uses_preservation_method :Specimen)
-ObjectPropertyRange(:uses_preservation_method :Preservation_Procedure)
+ObjectPropertyDomain(soloon:analyte_type <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>)
+
+# Object Property: soloon:uses_preservation_method (soloon:uses_preservation_method)
+
+SubObjectPropertyOf(soloon:uses_preservation_method owl:topObjectProperty)
+ObjectPropertyDomain(soloon:uses_preservation_method <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>)
+ObjectPropertyRange(soloon:uses_preservation_method <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
 
 
 
@@ -68,111 +96,233 @@ ObjectPropertyRange(:uses_preservation_method :Preservation_Procedure)
 #   Classes
 ############################
 
-# Class: :Biological_Sample_Preservation_Procedure (:Biological_Sample_Preservation_Procedure)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963> (Cell or Vector Cryopreservation)
 
-SubClassOf(:Biological_Sample_Preservation_Procedure :Preservation_Procedure)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963> "Cell or Vector Cryopreservation")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475>)
 
-# Class: :Biospecimen (:Biospecimen)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219> (Anatomic Structure, System or Substance)
 
-SubClassOf(:Biospecimen :Specimen)
-SubClassOf(:Biospecimen ObjectSomeValuesFrom(:analysis_target :Organic_Chemical))
-SubClassOf(:Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Preservation_Procedure))
-SubClassOf(:Biospecimen ObjectAllValuesFrom(:analysis_target :Organic_Chemical))
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219> "Anatomic Structure, System or Substance")
 
-# Class: :Blood_DNA (:Blood_DNA)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434> (Blood)
 
-SubClassOf(:Blood_DNA :DNA_Biospecimen)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434> "Blood")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236>)
 
-# Class: :Cell_of_Vector_Cryopreservation (:Cell_of_Vector_Cryopreservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236> (Body Fluid or Substance)
 
-SubClassOf(:Cell_of_Vector_Cryopreservation :Cryopreservation)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236> "Body Fluid or Substance")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219>)
 
-# Class: :Cryopreservation (:Cryopreservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437> (REPLI-g Pooled DNA)
 
-SubClassOf(:Cryopreservation :Biological_Sample_Preservation_Procedure)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437> "REPLI-g Pooled DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
 
-# Class: :DNA_Biospecimen (:DNA_Biospecimen)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439> (REPLI-g X DNA)
 
-EquivalentClasses(:DNA_Biospecimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:analysis_target :Dioxyribonucleic_Acid)))
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439> "REPLI-g X DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
 
-# Class: :Dioxyribonucleic_Acid (:Dioxyribonucleic_Acid)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416> (Blood DNA)
 
-SubClassOf(:Dioxyribonucleic_Acid :Nucleic_Acids)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416> "Blood DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
 
-# Class: :Egg_Preservation (:Egg_Preservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> (Clinical or Research Activity)
 
-SubClassOf(:Egg_Preservation :Biological_Sample_Preservation_Procedure)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> "Clinical or Research Activity")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431>)
 
-# Class: :FFPE_Preservation (:FFPE_Preservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995> (Total RNA)
 
-EquivalentClasses(:FFPE_Preservation ObjectIntersectionOf(:Fixed_Formalin_Preservation :Paraffin_Embedding_Preservation))
-DisjointClasses(:FFPE_Preservation :Non_FFPE_Preservation)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995> "Total RNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
 
-# Class: :Fixed_Formalin_Preservation (:Fixed_Formalin_Preservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475> (Cryopreservation)
 
-SubClassOf(:Fixed_Formalin_Preservation :Biological_Sample_Preservation_Procedure)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475> "Cryopreservation")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
 
-# Class: :Fixed_Specimen (:Fixed_Specimen)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759> (Egg Preservation)
 
-EquivalentClasses(:Fixed_Specimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Paraffin_Embedding_Preservation)))
-SubClassOf(:Fixed_Specimen :Biospecimen)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759> "Egg Preservation")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
 
-# Class: :Formalin-Fixed_Paraffin-Embedded_DNA (:Formalin-Fixed_Paraffin-Embedded_DNA)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908> (Drug, Food, Chemical or Biomedical Material)
 
-EquivalentClasses(:Formalin-Fixed_Paraffin-Embedded_DNA ObjectIntersectionOf(:DNA_Biospecimen :Fixed_Specimen :Formalin_Preserved_Specimen))
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908> "Drug, Food, Chemical or Biomedical Material")
 
-# Class: :Formalin-Fixed_Paraffin-Embedded_RNA (:Formalin-Fixed_Paraffin-Embedded_RNA)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913> (Drug or Chemical by Structure)
 
-EquivalentClasses(:Formalin-Fixed_Paraffin-Embedded_RNA ObjectIntersectionOf(:RNA_Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Fixed_Formalin_Preservation) ObjectSomeValuesFrom(:uses_preservation_method :Paraffin_Embedding_Preservation)))
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913> "Drug or Chemical by Structure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908>)
 
-# Class: :Formalin_Preserved_Specimen (:Formalin_Preserved_Specimen)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> (Specimen)
 
-EquivalentClasses(:Formalin_Preserved_Specimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Fixed_Formalin_Preservation)))
-SubClassOf(:Formalin_Preserved_Specimen :Biospecimen)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> "Specimen")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187>)
 
-# Class: :Messenger_RNA (:Messenger_RNA)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> (Preservation Procedure)
 
-SubClassOf(:Messenger_RNA :Ribonucleic_Acid)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> "Preservation Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957>)
 
-# Class: :Non-FFPE_DNA_Biospecimen (:Non-FFPE_DNA_Biospecimen)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181> (Conceptual Entity)
 
-EquivalentClasses(:Non-FFPE_DNA_Biospecimen ObjectIntersectionOf(:DNA_Biospecimen ObjectSomeValuesFrom(:uses_preservation_method :Non-FFPE_DNA_Biospecimen)))
-SubClassOf(:Non-FFPE_DNA_Biospecimen :DNA_Biospecimen)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181> "Conceptual Entity")
 
-# Class: :Non_FFPE_Preservation (:Non_FFPE_Preservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> (Intervention or Procedure)
 
-SubClassOf(:Non_FFPE_Preservation :Biological_Sample_Preservation_Procedure)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> "Intervention or Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203>)
 
-# Class: :Nucleic_Acids (:Nucleic_Acids)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> (Laboratory Procedure)
 
-SubClassOf(:Nucleic_Acids :Organic_Chemical)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> "Laboratory Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218>)
 
-# Class: :Organic_Chemical (:Organic_Chemical)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150> (Freeze Drying)
 
-SubClassOf(:Organic_Chemical :Substance)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150> "Freeze Drying")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
 
-# Class: :PGPE_Preservation (:PGPE_Preservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431> (Activity)
 
-EquivalentClasses(:PGPE_Preservation ObjectIntersectionOf(:Paraffin_Embedding_Preservation :Propylene_Glycol_Preservation))
-SubClassOf(:PGPE_Preservation :Propylene_Glycol_Preservation)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431> "Activity")
 
-# Class: :Paraffin_Embedding_Preservation (:Paraffin_Embedding_Preservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> (DNA)
 
-SubClassOf(:Paraffin_Embedding_Preservation :Biological_Sample_Preservation_Procedure)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> "DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706>)
 
-# Class: :Propylene_Glycol_Preservation (:Propylene_Glycol_Preservation)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306> (Substance)
 
-SubClassOf(:Propylene_Glycol_Preservation :Biological_Sample_Preservation_Procedure)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306> "Substance")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187>)
 
-# Class: :RNA_Biospecimen (:RNA_Biospecimen)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> (Material)
 
-EquivalentClasses(:RNA_Biospecimen ObjectIntersectionOf(:Biospecimen ObjectSomeValuesFrom(:analysis_target :Ribonucleic_Acid)))
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> "Material")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181>)
 
-# Class: :Ribonucleic_Acid (:Ribonucleic_Acid)
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579> (Inorganic Chemical)
 
-SubClassOf(:Ribonucleic_Acid :Nucleic_Acids)
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579> "Inorganic Chemical")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> (Biologic Sample Preservation Procedure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> "Biologic Sample Preservation Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706> (Nucleic Acids)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706> "Nucleic Acids")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> (Biospecimen)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> "Biospecimen")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>)
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectSomeValuesFrom(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219>))
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectSomeValuesFrom(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718>))
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectSomeValuesFrom(soloon:uses_preservation_method <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232>))
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectAllValuesFrom(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718>))
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708> (Nucleic Acids, Nucleosides, and Nucleotides)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708> "Nucleic Acids, Nucleosides, and Nucleotides")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718> (Organic Chemical)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718> "Organic Chemical")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> (Mixed Category Laboratory Procedure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> "Mixed Category Laboratory Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812> (Ribonucleic Acid)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812> "Ribonucleic Acid")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706>)
+
+# Class: soloon:Blood_Biospecimen (soloon:Blood_Biospecimen)
+
+SubClassOf(soloon:Blood_Biospecimen <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+SubClassOf(soloon:Blood_Biospecimen ObjectSomeValuesFrom(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#specimen_source> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434>))
+
+# Class: soloon:Blood_DNA (soloon:Blood_DNA)
+
+SubClassOf(soloon:Blood_DNA soloon:Blood_Biospecimen)
+SubClassOf(soloon:Blood_DNA soloon:DNA_Biospecimen)
+
+# Class: soloon:DNA_Biospecimen (soloon:DNA_Biospecimen)
+
+EquivalentClasses(soloon:DNA_Biospecimen ObjectIntersectionOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectSomeValuesFrom(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449>)))
+
+# Class: soloon:FFPE_Preservation (soloon:FFPE_Preservation)
+
+EquivalentClasses(soloon:FFPE_Preservation ObjectIntersectionOf(soloon:Fixed_Formalin_Preservation soloon:Paraffin_Embedding_Preservation))
+DisjointClasses(soloon:FFPE_Preservation soloon:Non_FFPE_Preservation)
+
+# Class: soloon:Fixed_Formalin_Preservation (soloon:Fixed_Formalin_Preservation)
+
+SubClassOf(soloon:Fixed_Formalin_Preservation <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: soloon:Fixed_Specimen (soloon:Fixed_Specimen)
+
+EquivalentClasses(soloon:Fixed_Specimen ObjectIntersectionOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectSomeValuesFrom(soloon:uses_preservation_method soloon:Paraffin_Embedding_Preservation)))
+SubClassOf(soloon:Fixed_Specimen <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: soloon:Formalin-Fixed_Paraffin-Embedded_DNA (soloon:Formalin-Fixed_Paraffin-Embedded_DNA)
+
+EquivalentClasses(soloon:Formalin-Fixed_Paraffin-Embedded_DNA ObjectIntersectionOf(soloon:DNA_Biospecimen soloon:Fixed_Specimen soloon:Formalin_Preserved_Specimen))
+
+# Class: soloon:Formalin-Fixed_Paraffin-Embedded_RNA (soloon:Formalin-Fixed_Paraffin-Embedded_RNA)
+
+EquivalentClasses(soloon:Formalin-Fixed_Paraffin-Embedded_RNA ObjectIntersectionOf(soloon:RNA_Biospecimen ObjectSomeValuesFrom(soloon:uses_preservation_method soloon:Fixed_Formalin_Preservation) ObjectSomeValuesFrom(soloon:uses_preservation_method soloon:Paraffin_Embedding_Preservation)))
+
+# Class: soloon:Formalin_Preserved_Specimen (soloon:Formalin_Preserved_Specimen)
+
+EquivalentClasses(soloon:Formalin_Preserved_Specimen ObjectIntersectionOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectSomeValuesFrom(soloon:uses_preservation_method soloon:Fixed_Formalin_Preservation)))
+SubClassOf(soloon:Formalin_Preserved_Specimen <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: soloon:Non-FFPE_DNA_Biospecimen (soloon:Non-FFPE_DNA_Biospecimen)
+
+EquivalentClasses(soloon:Non-FFPE_DNA_Biospecimen ObjectIntersectionOf(soloon:DNA_Biospecimen ObjectSomeValuesFrom(soloon:uses_preservation_method soloon:Non-FFPE_DNA_Biospecimen)))
+SubClassOf(soloon:Non-FFPE_DNA_Biospecimen soloon:DNA_Biospecimen)
+
+# Class: soloon:Non-FFPE_DNA_Specimen (soloon:Non-FFPE_DNA_Specimen)
+
+EquivalentClasses(soloon:Non-FFPE_DNA_Specimen ObjectIntersectionOf(ObjectSomeValuesFrom(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449>) ObjectSomeValuesFrom(soloon:uses_preservation_method soloon:Non_FFPE_Preservation) ObjectAllValuesFrom(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449>)))
+
+# Class: soloon:Non_FFPE_Preservation (soloon:Non_FFPE_Preservation)
+
+SubClassOf(soloon:Non_FFPE_Preservation <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: soloon:PGPE_Preservation (soloon:PGPE_Preservation)
+
+EquivalentClasses(soloon:PGPE_Preservation ObjectIntersectionOf(soloon:Paraffin_Embedding_Preservation soloon:Propylene_Glycol_Preservation))
+SubClassOf(soloon:PGPE_Preservation soloon:Propylene_Glycol_Preservation)
+
+# Class: soloon:Paraffin_Embedding_Preservation (soloon:Paraffin_Embedding_Preservation)
+
+SubClassOf(soloon:Paraffin_Embedding_Preservation <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: soloon:Propylene_Glycol_Preservation (soloon:Propylene_Glycol_Preservation)
+
+SubClassOf(soloon:Propylene_Glycol_Preservation <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: soloon:RNA_Biospecimen (soloon:RNA_Biospecimen)
+
+EquivalentClasses(soloon:RNA_Biospecimen ObjectIntersectionOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> ObjectSomeValuesFrom(soloon:analysis_target <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812>)))
 
 
-SubObjectPropertyOf(ObjectPropertyChain(:analyte_type :analysis_target) :analysis_target)
-SubObjectPropertyOf(ObjectPropertyChain(:analyte_type :uses_preservation_method) :uses_preservation_method)
+SubObjectPropertyOf(ObjectPropertyChain(soloon:analyte_type soloon:analysis_target) soloon:analysis_target)
+SubObjectPropertyOf(ObjectPropertyChain(soloon:analyte_type soloon:uses_preservation_method) soloon:uses_preservation_method)
 )
