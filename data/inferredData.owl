@@ -1,0 +1,371 @@
+Prefix(:=<https://ontologies.r.us/ncitp/SoloOntology/inferredData#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://ontologies.r.us/ncitp/SoloOntology/inferredData>
+
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957>))
+Declaration(Class(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Biospecimen>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Blood_Biospecimen>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Blood_DNA>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#FFPE_Preservation>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Formalin_Preservation>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Specimen>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_DNA>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_RNA>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Formalin_Preserved_Specimen>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Biospecimen>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Specimen>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Non_FFPE_Preservation>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#PGPE_Preservation>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Paraffin_Embedding_Preservation>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#Propylene_Glycol_Preservation>))
+Declaration(Class(<http://ontologies.r.us/ncitp/SoloOntology#RNA_Biospecimen>))
+Declaration(ObjectProperty(<http://ontologies.r.us/ncitp/SoloOntology#analysis_target>))
+Declaration(ObjectProperty(<http://ontologies.r.us/ncitp/SoloOntology#analyte_type>))
+Declaration(ObjectProperty(<http://ontologies.r.us/ncitp/SoloOntology#uses_preservation_method>))
+Declaration(NamedIndividual(<http://ontologies.r.us/ncitp/SoloCodeSets#DNA>))
+Declaration(NamedIndividual(<http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>))
+Declaration(NamedIndividual(<http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>))
+Declaration(NamedIndividual(<http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>))
+Declaration(NamedIndividual(<http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: owl:topObjectProperty (owl:topObjectProperty)
+
+InverseObjectProperties(owl:topObjectProperty owl:topObjectProperty)
+SymmetricObjectProperty(owl:topObjectProperty)
+TransitiveObjectProperty(owl:topObjectProperty)
+ReflexiveObjectProperty(owl:topObjectProperty)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963> (Cell or Vector Cryopreservation)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963> "Cell or Vector Cryopreservation")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112963> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219> (Anatomic Structure, System or Substance)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219> "Anatomic Structure, System or Substance")
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434> (Blood)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434> "Blood")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236> (Body Fluid or Substance)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236> "Body Fluid or Substance")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13236> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12219>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437> (REPLI-g Pooled DNA)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437> "REPLI-g Pooled DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156437> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439> (REPLI-g X DNA)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439> "REPLI-g X DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156439> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416> (Blood DNA)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416> "Blood DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158416> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> (Clinical or Research Activity)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> "Clinical or Research Activity")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995> (Total RNA)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995> "Total RNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C163995> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475> (Cryopreservation)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475> "Cryopreservation")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16475> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759> (Egg Preservation)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759> "Egg Preservation")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18759> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908> (Drug, Food, Chemical or Biomedical Material)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908> "Drug, Food, Chemical or Biomedical Material")
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913> (Drug or Chemical by Structure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913> "Drug or Chemical by Structure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> (Specimen)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> "Specimen")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> (Preservation Procedure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> "Preservation Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181> (Conceptual Entity)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181> "Conceptual Entity")
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> (Intervention or Procedure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> "Intervention or Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> (Laboratory Procedure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> "Laboratory Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150> (Freeze Drying)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150> "Freeze Drying")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28150> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431> (Activity)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431> "Activity")
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> (DNA)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> "DNA")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306> (Substance)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306> "Substance")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45306> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> (Material)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> "Material")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579> (Inorganic Chemical)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579> "Inorganic Chemical")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C579> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> (Biologic Sample Preservation Procedure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> "Biologic Sample Preservation Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706> (Nucleic Acids)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706> "Nucleic Acids")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> (Biospecimen)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> "Biospecimen")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708> (Nucleic Acids, Nucleosides, and Nucleotides)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708> "Nucleic Acids, Nucleosides, and Nucleotides")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718> (Organic Chemical)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718> "Organic Chemical")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> (Mixed Category Laboratory Procedure)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> "Mixed Category Laboratory Procedure")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812> (Ribonucleic Acid)
+
+AnnotationAssertion(rdfs:label <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812> "Ribonucleic Acid")
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Blood_Biospecimen> (<http://ontologies.r.us/ncitp/SoloOntology#Blood_Biospecimen>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Blood_Biospecimen> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Blood_DNA> (<http://ontologies.r.us/ncitp/SoloOntology#Blood_DNA>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Blood_DNA> <http://ontologies.r.us/ncitp/SoloOntology#Blood_Biospecimen>)
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Blood_DNA> <http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen> (<http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#FFPE_Preservation> (<http://ontologies.r.us/ncitp/SoloOntology#FFPE_Preservation>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#FFPE_Preservation> <http://ontologies.r.us/ncitp/SoloOntology#Fixed_Formalin_Preservation>)
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#FFPE_Preservation> <http://ontologies.r.us/ncitp/SoloOntology#Paraffin_Embedding_Preservation>)
+DisjointClasses(<http://ontologies.r.us/ncitp/SoloOntology#FFPE_Preservation> <http://ontologies.r.us/ncitp/SoloOntology#Non_FFPE_Preservation>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Fixed_Formalin_Preservation> (<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Formalin_Preservation>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Formalin_Preservation> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Fixed_Specimen> (<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Specimen>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Specimen> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_DNA> (<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_DNA>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_DNA> <http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen>)
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_DNA> <http://ontologies.r.us/ncitp/SoloOntology#Fixed_Specimen>)
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_DNA> <http://ontologies.r.us/ncitp/SoloOntology#Formalin_Preserved_Specimen>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_RNA> (<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_RNA>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_RNA> <http://ontologies.r.us/ncitp/SoloOntology#Fixed_Specimen>)
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_RNA> <http://ontologies.r.us/ncitp/SoloOntology#Formalin_Preserved_Specimen>)
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_RNA> <http://ontologies.r.us/ncitp/SoloOntology#RNA_Biospecimen>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Formalin_Preserved_Specimen> (<http://ontologies.r.us/ncitp/SoloOntology#Formalin_Preserved_Specimen>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Formalin_Preserved_Specimen> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Biospecimen> (<http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Biospecimen>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Biospecimen> <http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Specimen> (<http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Specimen>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Non-FFPE_DNA_Specimen> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Non_FFPE_Preservation> (<http://ontologies.r.us/ncitp/SoloOntology#Non_FFPE_Preservation>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Non_FFPE_Preservation> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#PGPE_Preservation> (<http://ontologies.r.us/ncitp/SoloOntology#PGPE_Preservation>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#PGPE_Preservation> <http://ontologies.r.us/ncitp/SoloOntology#Paraffin_Embedding_Preservation>)
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#PGPE_Preservation> <http://ontologies.r.us/ncitp/SoloOntology#Propylene_Glycol_Preservation>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Paraffin_Embedding_Preservation> (<http://ontologies.r.us/ncitp/SoloOntology#Paraffin_Embedding_Preservation>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Paraffin_Embedding_Preservation> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#Propylene_Glycol_Preservation> (<http://ontologies.r.us/ncitp/SoloOntology#Propylene_Glycol_Preservation>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#Propylene_Glycol_Preservation> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262>)
+
+# Class: <http://ontologies.r.us/ncitp/SoloOntology#RNA_Biospecimen> (<http://ontologies.r.us/ncitp/SoloOntology#RNA_Biospecimen>)
+
+SubClassOf(<http://ontologies.r.us/ncitp/SoloOntology#RNA_Biospecimen> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://ontologies.r.us/ncitp/SoloCodeSets#DNA> (<http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1908> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1913> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C706> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C708> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C718> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+
+# Individual: <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA> (<http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70699> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ClassAssertion(<http://ontologies.r.us/ncitp/SoloOntology#DNA_Biospecimen> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ClassAssertion(<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Specimen> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ClassAssertion(<http://ontologies.r.us/ncitp/SoloOntology#Formalin-Fixed_Paraffin-Embedded_DNA> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ClassAssertion(<http://ontologies.r.us/ncitp/SoloOntology#Formalin_Preserved_Specimen> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ObjectPropertyAssertion(<http://ontologies.r.us/ncitp/SoloOntology#analysis_target> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+ObjectPropertyAssertion(<http://ontologies.r.us/ncitp/SoloOntology#uses_preservation_method> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ObjectPropertyAssertion(<http://ontologies.r.us/ncitp/SoloOntology#uses_preservation_method> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+
+# Individual: <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin> (<http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ClassAssertion(<http://ontologies.r.us/ncitp/SoloOntology#Fixed_Formalin_Preservation> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+
+# Individual: <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding> (<http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16203> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19232> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64262> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74957> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+ClassAssertion(<http://ontologies.r.us/ncitp/SoloOntology#Paraffin_Embedding_Preservation> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+
+# Individual: <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345> (<http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345>)
+
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20181> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345>)
+ClassAssertion(<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48187> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345>)
+ClassAssertion(<http://ontologies.r.us/ncitp/SoloOntology#Biospecimen> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345>)
+ObjectPropertyAssertion(<http://ontologies.r.us/ncitp/SoloOntology#analysis_target> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345> <http://ontologies.r.us/ncitp/SoloCodeSets#DNA>)
+ObjectPropertyAssertion(<http://ontologies.r.us/ncitp/SoloOntology#analyte_type> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345> <http://ontologies.r.us/ncitp/SoloCodeSets#FFPE_DNA>)
+ObjectPropertyAssertion(<http://ontologies.r.us/ncitp/SoloOntology#uses_preservation_method> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345> <http://ontologies.r.us/ncitp/SoloCodeSets#FixedFormalin>)
+ObjectPropertyAssertion(<http://ontologies.r.us/ncitp/SoloOntology#uses_preservation_method> <http://ontologies.r.us/ncitp/SoloCodeSets#specimen_12345> <http://ontologies.r.us/ncitp/SoloCodeSets#PariffinEmbedding>)
+
+
+AnnotationAssertion(rdfs:comment <http://ontologies.r.us/ncitp/SoloOntology#specimen_source> "The original source of a specimen")
+)
